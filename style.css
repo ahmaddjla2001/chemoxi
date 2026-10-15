@@ -1,0 +1,83 @@
+
+:root{
+  --navy:#0b2a66;
+  --navy2:#08285f;
+  --blue:#123d88;
+  --red:#e21b23;
+  --ink:#13203a;
+  --muted:#5d6880;
+  --line:#e7ebf3;
+  --soft:#f5f8fc;
+  --white:#fff;
+  --shadow:0 12px 35px rgba(13,42,102,.10);
+  --radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{width:min(1180px,92%);margin:auto}
+.topbar{height:72px;border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:50}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.logo{width:205px}
+.navlinks{display:flex;align-items:center;gap:28px;font-size:14px}
+.navlinks a{padding:26px 0 23px;border-bottom:2px solid transparent}
+.navlinks a:hover,.navlinks a.active{border-bottom-color:var(--red)}
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--navy);color:#fff;padding:12px 21px;border-radius:28px;font-weight:700;font-size:14px;box-shadow:0 5px 14px rgba(8,40,95,.18)}
+.cta:hover{background:#0d367d}
+.cta.red{background:var(--red)}
+.outline{background:#fff;color:var(--navy);border:1px solid var(--navy);box-shadow:none}
+.menu{display:none;border:0;background:none;font-size:28px;color:var(--navy)}
+
+.hero{min-height:430px;background:linear-gradient(90deg,#f7fbff 0%,#f7fbff 36%,rgba(247,251,255,.88) 49%,rgba(255,255,255,0) 75%),url("assets/hero-lab.jpg") right center/auto 100% no-repeat;display:flex;align-items:center}
+.hero-content{width:min(1180px,92%);margin:auto}
+.hero-copy{width:52%;padding:65px 0}
+.kicker{font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);font-size:13px}
+.hero h1{font-size:50px;line-height:1.02;margin:10px 0 18px;color:var(--navy)}
+.hero h1 span{color:var(--red)}
+.hero p{font-size:17px;max-width:560px;color:#29354c;margin-bottom:28px}
+.actions{display:flex;gap:14px;flex-wrap:wrap}
+.section{padding:72px 0}
+.section.alt{background:var(--soft)}
+.section-head{margin-bottom:30px}
+.section-head h2{font-size:32px;color:var(--navy);margin:0 0 10px}
+.section-head h2:after{content:"";display:block;width:42px;height:3px;background:var(--red);margin-top:12px}
+.section-head p{max-width:760px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:28px;background:#fff;box-shadow:var(--shadow)}
+.card h3{margin:12px 0 8px;color:var(--navy)}
+.card p{color:var(--muted);font-size:14px;margin:0}
+.icon{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-weight:800;font-size:21px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.split img{border-radius:18px;box-shadow:var(--shadow)}
+.checks{padding:0;margin:22px 0;list-style:none}
+.checks li{margin:10px 0;padding-left:28px;position:relative}
+.checks li:before{content:"✓";position:absolute;left:0;color:#13823b;font-weight:900}
+.capabilities{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.cap{padding:22px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.cap strong{display:block;color:var(--navy);margin-bottom:5px}
+.cap span{color:var(--muted);font-size:13px}
+.banner{padding:30px;border-radius:18px;background:linear-gradient(110deg,var(--navy),#174aa1);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.banner h3{margin:0 0 5px;font-size:25px}.banner p{margin:0;opacity:.9}
+.page-hero{padding:68px 0;background:linear-gradient(135deg,#f3f7fc,#fff)}
+.page-hero h1{font-size:44px;color:var(--navy);margin:0 0 10px}.page-hero p{max-width:760px;color:var(--muted);font-size:17px}
+.product{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.product-photo{background:#f4f8fc;border-radius:20px;padding:18px}
+.product h2{color:var(--navy);font-size:34px;margin:0 0 6px}.product h2 span{color:var(--red);font-size:17px;display:block}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}
+.badge{border:1px solid #cbd5e5;border-radius:20px;padding:7px 12px;font-size:12px;font-weight:700;color:var(--navy);background:#fff}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:30px}
+.contact-card{padding:30px;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+.contact-item{margin:20px 0}.contact-item strong{display:block;color:var(--navy);margin-bottom:4px}.contact-item span,.contact-item a{color:var(--muted)}
+form{display:grid;gap:14px}label{font-size:13px;font-weight:700;color:var(--navy)}input,textarea{width:100%;border:1px solid #d6deea;border-radius:10px;padding:13px;font:inherit}textarea{min-height:145px;resize:vertical}
+.footer{background:var(--navy2);color:#fff;padding:42px 0 22px}.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1.2fr;gap:35px}.footer h4{margin:0 0 12px}.footer p,.footer a{color:#dbe5f7;font-size:13px}.footer-logo{width:180px;margin-bottom:12px}.copyright{border-top:1px solid rgba(255,255,255,.2);margin-top:28px;padding-top:18px;color:#c6d4ea;font-size:12px}
+.note{border-left:4px solid var(--red);padding:18px 20px;background:#f8fafc;border-radius:0 12px 12px 0;margin:25px 0;color:#39445a}
+@media(max-width:900px){
+  .navlinks{display:none}.menu{display:block}.nav{height:68px}.topbar{height:68px}
+  .hero{min-height:520px;background:linear-gradient(180deg,rgba(247,251,255,.94) 0%,rgba(247,251,255,.92) 56%,rgba(255,255,255,.35) 100%),url("assets/hero-lab.jpg") center bottom/cover no-repeat}
+  .hero-copy{width:100%;padding:60px 0}.hero h1{font-size:42px}.cards,.split,.product,.contact-grid,.footer-grid{grid-template-columns:1fr}.capabilities{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .container,.hero-content{width:90%}.hero h1{font-size:36px}.section{padding:52px 0}.page-hero h1{font-size:36px}.capabilities{grid-template-columns:1fr}.banner{align-items:flex-start;flex-direction:column}
+}
